@@ -5,3 +5,15 @@
 * [Reverse Polish notation](#reverse-polish-notation-table-of-contents)
 
 ### Reverse Polish notation ([Table of Contents](#contents))
+
+#### Examples
+```js
+calcInPolishNotation([1, 2, '+', 4, '*', 3, '+']); // 15
+calcInPolishNotation([7, 2, 3, '*', '-']); // 1
+```
+<img width="454" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/131c1cde-2378-4b8d-b999-3e9350878761">
+<img width="435" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/ef126339-108c-4169-a328-3e0fcf41b69b">
+
+#### Solution
+
+---- In Progress -----
