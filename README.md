@@ -3,9 +3,9 @@
 ## Contents
 
 * [Mirror the matrix](#mirror-the-matrix-table-of-contents)
-* [Reverse Polish notation](#reverse-polish-notation-table-of-contents)
 
 ### Mirror the matrix([Table of Contents](#contents))
+**NB!** Solve without any of built-in js array methods except `push()`
 
 #### Examples
 ```js
@@ -27,16 +27,37 @@ getMirrorMatrix([
 
 #### Solution
 
-### Reverse Polish notation ([Table of Contents](#contents))
+<details>
+<summary>Solution</summary>
+<img width="1142" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/fbbdda73-9a46-4aa3-a30d-2e3c5a69ca13">
 
-#### Examples
 ```js
-calcInPolishNotation([1, 2, '+', 4, '*', 3, '+']); // 15
-calcInPolishNotation([7, 2, 3, '*', '-']); // 1
+function getMirrorLine(line) {
+  const mirroredLine = [];
+  const lineSize = line.length;
+
+  for (let i = 0; i < lineSize; i++) {
+    if (i <= lineSize/2 - 1) {
+      mirroredLine.push(line[i])
+    } else {
+      const mirroredElemIndex = lineSize - i - 1;
+      mirroredLine.push(line[mirroredElemIndex]);
+    }
+  }
+
+  return mirroredLine;
+}
+
+function getMirrorMatrix(arr) {
+  console.log(arr)
+  const result = [];
+  
+  for(let i = 0; i < arr.length; i++) {
+    const mirroredLine = getMirrorLine(arr[i]);
+    result.push(mirroredLine);
+  }
+
+  return result;
+}
 ```
-<img width="454" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/131c1cde-2378-4b8d-b999-3e9350878761">
-<img width="435" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/ef126339-108c-4169-a328-3e0fcf41b69b">
-
-#### Solution
-
----- In Progress -----
+</details>
