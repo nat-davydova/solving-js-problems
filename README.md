@@ -27,8 +27,12 @@ rotateLeft(matrix);
 
 <img width="595" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/38e78306-c72a-4135-b788-4c451cdf74ae">
 
-
 #### Solution
+
+<details>
+  <summary>Solution (in progress)</summary>
+  <img width="853" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/69e43f0e-7dcb-47ea-8c45-258a3837d2a4">
+</details>
 
 ### Mirror the matrix horizontally([Table of Contents](#contents))
 
