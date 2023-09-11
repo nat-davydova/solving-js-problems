@@ -2,6 +2,7 @@
 
 ## Contents
 
+* [Rotate matrix to the left](#rotate-matrix-to-the-left-table-of-contents)
 * [Mirror the matrix horizontally](#mirror-the-matrix-horizontally-table-of-contents)
 
 ### Rotate matrix to the left([Table of Contents](#contents))
@@ -23,6 +24,9 @@ rotateLeft(matrix);
 //   [1, 5, 9],
 // ]
 ```
+
+<img width="595" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/38e78306-c72a-4135-b788-4c451cdf74ae">
+
 
 #### Solution
 
