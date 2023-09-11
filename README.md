@@ -2,12 +2,33 @@
 
 ## Contents
 
-* [Mirror the matrix](#mirror-the-matrix-table-of-contents)
+* [Mirror the matrix horizontally](#mirror-the-matrix-horizontally-table-of-contents)
 
-### Mirror the matrix([Table of Contents](#contents))
-**NB!** Solve without any of built-in js array methods except `push()`
+### Rotate matrix to the left([Table of Contents](#contents))
 
-#### Examples
+#### Example
+
+```js
+const matrix = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 0, 1, 2],
+];
+
+rotateLeft(matrix);
+// [
+//   [4, 8, 2],
+//   [3, 7, 1],
+//   [2, 6, 0],
+//   [1, 5, 9],
+// ]
+```
+
+#### Solution
+
+### Mirror the matrix horizontally([Table of Contents](#contents))
+
+#### Example
 ```js
 getMirrorMatrix([
   [11, 12, 13, 14],
@@ -23,7 +44,6 @@ getMirrorMatrix([
 //     [41, 42, 42, 41],
 //  ]
 ```
-<img width="745" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/c8183453-5eb7-4a19-aa4d-a4d2ddf30663">
 
 #### Solution
 
