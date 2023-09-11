@@ -2,7 +2,30 @@
 
 ## Contents
 
+* [Mirror the matrix](#mirror-the-matrix-table-of-contents)
 * [Reverse Polish notation](#reverse-polish-notation-table-of-contents)
+
+### Mirror the matrix([Table of Contents](#contents))
+
+#### Examples
+```js
+getMirrorMatrix([
+  [11, 12, 13, 14],
+  [21, 22, 23, 24],
+  [31, 32, 33, 34],
+  [41, 42, 43, 44],
+]); 
+=>
+//  [
+//     [11, 12, 12, 11],
+//     [21, 22, 22, 21],
+//     [31, 32, 32, 31],
+//     [41, 42, 42, 41],
+//  ]
+```
+<img width="745" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/c8183453-5eb7-4a19-aa4d-a4d2ddf30663">
+
+#### Solution
 
 ### Reverse Polish notation ([Table of Contents](#contents))
 
