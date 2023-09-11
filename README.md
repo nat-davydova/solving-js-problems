@@ -32,6 +32,7 @@ rotateLeft(matrix);
 <details>
   <summary>Solution (in progress)</summary>
   <img width="853" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/69e43f0e-7dcb-47ea-8c45-258a3837d2a4">
+  _____ IN PROGRESS _____
 </details>
 
 ### Mirror the matrix horizontally([Table of Contents](#contents))
