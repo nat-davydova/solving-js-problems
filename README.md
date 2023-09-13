@@ -1,4 +1,4 @@
-# Solves of different js problems
+<img width="703" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/d234976d-259b-41bb-9fca-909a3e0f6c5e"># Solves of different js problems
 
 ## Contents
 
@@ -30,10 +30,10 @@ rotateLeft(matrix);
 #### Solution
 
 <details>
-  <summary>Solution (in progress)</summary>
-  <img width="853" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/69e43f0e-7dcb-47ea-8c45-258a3837d2a4">
-  <img width="977" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/28038185-acf3-4166-9206-b24a70dc210a">
-  <img width="1140" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/2506df2c-88aa-4f1a-a3ff-d0f8ac8dd584">
+  <summary>Solution</summary>
+  <img width="715" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/5207bcfb-4c50-4465-a028-bc30397809c8">
+  <img width="703" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/fb63a0d9-291b-4012-9112-0b2c75ddf560">
+  
   ```js
   export function rotateLeft(matrix) {
   const result = [];
@@ -55,7 +55,7 @@ rotateLeft(matrix);
 
   return result;
 }
-  ```
+```
 </details>
 
 ### Mirror the matrix horizontally([Table of Contents](#contents))
