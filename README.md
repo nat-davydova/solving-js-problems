@@ -1,4 +1,4 @@
-<img width="703" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/d234976d-259b-41bb-9fca-909a3e0f6c5e"># Solves of different js problems
+# Solutions of different js problems
 
 ## Contents
 
