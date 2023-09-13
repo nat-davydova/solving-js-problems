@@ -32,7 +32,30 @@ rotateLeft(matrix);
 <details>
   <summary>Solution (in progress)</summary>
   <img width="853" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/69e43f0e-7dcb-47ea-8c45-258a3837d2a4">
-  _____ IN PROGRESS _____
+  <img width="977" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/28038185-acf3-4166-9206-b24a70dc210a">
+  <img width="1140" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/2506df2c-88aa-4f1a-a3ff-d0f8ac8dd584">
+  ```js
+  export function rotateLeft(matrix) {
+  const result = [];
+
+  for(let i = 0; i < matrix.length; i++) {
+    const line = matrix[i];
+
+    for (let j = line.length - 1; j >= 0; j--) {
+      const newMatrixLineIndex = line.length - 1 - j;
+
+      if (!result[newMatrixLineIndex]) {
+        result.push([line[j]])
+      } else {
+        result[newMatrixLineIndex].push(line[j])
+      }
+      
+    }
+  }
+
+  return result;
+}
+  ```
 </details>
 
 ### Mirror the matrix horizontally([Table of Contents](#contents))
