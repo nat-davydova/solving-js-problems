@@ -6,7 +6,7 @@
 * [Rotate matrix to the left](#rotate-matrix-to-the-left-table-of-contents)
 * [Mirror the matrix horizontally](#mirror-the-matrix-horizontally-table-of-contents)
 
-### Rotate matrix to the right([Table of Contents](#contents))
+### Rotate matrix to the right ([Table of Contents](#contents))
 
 #### Example
 
@@ -53,7 +53,7 @@ rotateRight(matrix);
   ```
 </details>
 
-### Rotate matrix to the left([Table of Contents](#contents))
+### Rotate matrix to the left ([Table of Contents](#contents))
 
 #### Example
 
@@ -104,7 +104,7 @@ rotateLeft(matrix);
 ```
 </details>
 
-### Mirror the matrix horizontally([Table of Contents](#contents))
+### Mirror the matrix horizontally ([Table of Contents](#contents))
 
 #### Example
 ```js
