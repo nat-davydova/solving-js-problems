@@ -2,8 +2,56 @@
 
 ## Contents
 
+* [Rotate matrix to the right](#rotate-matrix-to-the-right-table-of-contents)
 * [Rotate matrix to the left](#rotate-matrix-to-the-left-table-of-contents)
 * [Mirror the matrix horizontally](#mirror-the-matrix-horizontally-table-of-contents)
+
+### Rotate matrix to the right([Table of Contents](#contents))
+
+#### Example
+
+```js
+const matrix = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 0, 1, 2],
+];
+
+rotateRight(matrix);
+// [
+//   [9, 5, 1],
+//   [0, 6, 2],
+//   [1, 7, 3],
+//   [2, 8, 4],
+// ]
+```
+#### Solution
+
+<details>
+  <summary>Solution</summary>
+  <img width="719" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/1477f356-7651-4d19-a6c2-9da3ee7e05f6">
+  <img width="959" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/a5eb04bb-6533-411c-a3eb-1922ede39506">
+
+  ```js
+    export function rotateRight(matrix) {
+      const result = [];
+    
+      for (let i = 0; i < matrix.length; i++) {
+        const line = matrix[i];
+    
+        for(let j = 0; j < line.length; j++) {
+          if(!result[j]) {
+            result.push([line[j]]);
+          } else {
+            result[j].unshift(line[j]);
+          }
+        }
+      }
+    
+      return result;
+  }
+  ```
+</details>
 
 ### Rotate matrix to the left([Table of Contents](#contents))
 
@@ -24,8 +72,6 @@ rotateLeft(matrix);
 //   [1, 5, 9],
 // ]
 ```
-
-<img width="595" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/38e78306-c72a-4135-b788-4c451cdf74ae">
 
 #### Solution
 
