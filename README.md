@@ -46,7 +46,7 @@ Given an n x m array, return the array elements arranged from outermost elements
   matrix.shift();
   ```
 
-  Now we need right side. To map through each row we have and to get the last elem of every row, than - delete it
+  Now we need **right side**. To map through each row we have and to get the last elem of every row, than - delete it:
 
   <img width="274" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/c08018ec-e234-44e0-878c-3a0c06b340b7">
 
@@ -55,6 +55,30 @@ Given an n x m array, return the array elements arranged from outermost elements
       result.push(row[row.length - 1]);
       row.pop();
   })
+  ```
+
+  **Bottom side** is a bit trickier: the last row elements should be grabbed from the right to the left:
+
+  <img width="233" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/0cc71a03-741e-42fc-8710-5c9a124467fa">
+
+  ```js
+  const bottomRow = matrix[matrix.length - 1];
+    for (let i = bottomRow.length - 1; i >= 0; i--) {
+      result.push(bottomRow[i]);
+    }
+    matrix.pop();
+  ```
+
+  The last part of the circle - **left side**. Here we loop through all the rows from bottom to top and grab evary first row item:
+
+  <img width="202" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/69ac1fc9-da7a-43b5-87d0-046b44fd5cea">
+
+  ```js
+    for (let i = matrix.length - 1; i >= 0; i--) {
+      const row = matrix[i];
+      result.push(row[0]);
+      row.shift();
+    }
   ```
 </details>
 
