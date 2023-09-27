@@ -37,6 +37,25 @@ Given an n x m array, return the array elements arranged from outermost elements
 
   <img width="1279" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/7c753a12-8e02-467d-a3b7-1f99cf1c3845">
 
+  The simpliciest part is to grab the **top side**, push it's elements into result and remove the line:
+
+  <img width="270" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/d423b4f5-942d-40b8-bc51-873f8e748fc5">
+
+  ```js
+  matrix[0].forEach(elem => result.push(elem));
+  matrix.shift();
+  ```
+
+  Now we need right side. To map through each row we have and to get the last elem of every row, than - delete it
+
+  <img width="274" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/c08018ec-e234-44e0-878c-3a0c06b340b7">
+
+  ```js
+  matrix.forEach(row => {
+      result.push(row[row.length - 1]);
+      row.pop();
+  })
+  ```
 </details>
 
 ### Rotate matrix to the right ([Table of Contents](#contents))
