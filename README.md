@@ -62,8 +62,8 @@ Given an n x m array, return the array elements arranged from outermost elements
   <img width="233" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/0cc71a03-741e-42fc-8710-5c9a124467fa">
 
   ```js
-  const bottomRow = matrix[matrix.length - 1];
-    for (let i = bottomRow.length - 1; i >= 0; i--) {
+  const bottomRow = matrix[matrix.length - 1]; // can be 'undefined' if the matrix is empty on this stage
+    for (let i = bottomRow?.length - 1; i >= 0; i--) {
       result.push(bottomRow[i]);
     }
     matrix.pop();
@@ -82,6 +82,41 @@ Given an n x m array, return the array elements arranged from outermost elements
   ```
 
   And then if there are any more rows in the matrix, we start a new circle.
+
+  ```js
+  function snail(matrix) {
+    const result = [];
+
+    // while we have non-empty rows
+    while(matrix.length > 0) {
+      // top side
+      matrix[0].forEach(elem => result.push(elem));
+      matrix.shift();
+  
+      // right side
+      matrix.forEach(row => {
+        result.push(row[row.length - 1]);
+        row.pop();
+      })
+  
+      //bottom side
+      const bottomRow = matrix[matrix.length - 1];
+      for (let i = bottomRow?.length - 1; i >= 0; i--) {
+        result.push(bottomRow[i]);
+      }
+      matrix.pop();
+  
+      //left side
+      for (let i = matrix.length - 1; i >= 0; i--) {
+        const row = matrix[i];
+        result.push(row[0]);
+        row.shift();
+      }
+    }
+  
+    return result;
+  }
+  ```
 </details>
 
 ### Rotate matrix to the right ([Table of Contents](#contents))
