@@ -80,6 +80,8 @@ Given an n x m array, return the array elements arranged from outermost elements
       row.shift();
     }
   ```
+
+  And then if there are any more rows in the matrix, we start a new circle.
 </details>
 
 ### Rotate matrix to the right ([Table of Contents](#contents))
