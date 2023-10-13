@@ -122,3 +122,8 @@ Given an n x m array, return the array elements arranged from outermost elements
 ### Rotate matrix to the right ([Table of Contents](#contents))
 
 ### Rotate matrix to the left ([Table of Contents](#contents))
+
+Given an `n x m` array, return a new array `m x n` array which is an initial array rotated counterclockwise (to the left)
+
+<img width="700" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/a3b0a5bb-408f-4d55-93ff-2591f6fa8741">
+
