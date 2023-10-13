@@ -127,3 +127,14 @@ Given an `n x m` array, return a new array `m x n` array which is an initial arr
 
 <img width="700" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/a3b0a5bb-408f-4d55-93ff-2591f6fa8741">
 
+<details>
+  <summary>Solution</summary>
+
+  An idea is to implement 2 nested loops. The outer one will loop through matrix's rows from top to bottom. The inner one will loop through a single row from right to left. Each element from a row should be put into a corresponding column of a new matrix: 1 row -> 1 column, 2 row - 2 column etc:
+
+  <img width="757" alt="image" src="https://github.com/nat-davydova/solving-js-problems/assets/52240221/b458ee11-a851-44a5-b649-fb8be2a5178a">
+
+  ```js
+
+  ```
+</details>
